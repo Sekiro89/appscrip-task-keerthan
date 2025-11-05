@@ -1,0 +1,87 @@
+.navbar {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 18px 0; /* adds vertical breathing space */
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px; /* adds consistent left/right alignment with page */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left: Logo */
+.nav-left img {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Center: Navigation links */
+.nav-center ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-center li {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+}
+
+.nav-center li:hover {
+  color: #0070f3;
+}
+
+/* Right: Icons & Language */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-right span {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-lang {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .nav-container {
+    padding: 0 20px;
+  }
+
+  .nav-center ul {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-center {
+    display: none; /* hide center menu on mobile */
+  }
+
+  .nav-left img {
+    width: 50px;
+  }
+
+  .nav-right {
+    gap: 12px;
+  }
+}

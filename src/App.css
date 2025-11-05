@@ -1,0 +1,15 @@
+.main-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}

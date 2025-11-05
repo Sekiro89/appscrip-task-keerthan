@@ -1,0 +1,86 @@
+.filter-sidebar {
+  width: 240px;
+  border-right: 1px solid #eaeaea;
+  padding-right: 1rem;
+  flex-shrink: 0;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.hide-filter {
+  font-size: 0.8rem;
+  color: #aaa;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.filter-checkbox input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.filter-section {
+  border-bottom: 1px solid #eee;
+  padding: 0.6rem 0;
+}
+
+.filter-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filter-section-header h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #222;
+}
+
+.arrow {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.filter-section-body {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.filter-option {
+  display: block;
+  color: #777;
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+  cursor: pointer;
+}
+
+.filter-option:hover {
+  color: #000;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .filter-sidebar {
+    display: none;
+  }
+}

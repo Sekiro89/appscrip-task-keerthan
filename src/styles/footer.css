@@ -1,0 +1,52 @@
+.footer {
+  width: 100vw; /* full screen width */
+  background: #000;
+  color: #fff;
+  padding: 36px 0;
+  box-sizing: border-box;
+}
+
+.footer-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 0 12px;
+  flex-wrap: wrap;
+}
+
+.subscribe h4, .contact h4 { font-size: 14px; letter-spacing: 0.6px; font-weight: 700; }
+.subscribe p, .contact p, .contact small { color: #ccc; font-size: 13px; margin-top: 8px; }
+
+.subscribe-box { display: flex; gap: 8px; margin-top: 12px; }
+.subscribe-box input { padding: 10px; width: 320px; max-width: 100%; border-radius: 4px; border: none; }
+.subscribe-box button { padding: 10px 16px; background: #222; color: #fff; border-radius: 4px; border: none; cursor: pointer; }
+
+.footer hr { border: 0; border-top: 1px solid #222; margin: 24px 0; }
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 0 12px;
+  flex-wrap: wrap;
+}
+
+.footer-links { display: flex; gap: 40px; }
+.footer-links h4 { font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+.footer-links ul { list-style: none; color: #ccc; }
+.footer-links li { margin-bottom: 8px; font-size: 13px; }
+
+.footer-social { min-width: 200px; }
+.cards img { width: 44px; margin-right: 8px; filter: brightness(0) invert(1); }
+
+.copyright { text-align: center; color: #888; margin-top: 24px; font-size: 13px; }
+
+/* responsivity */
+@media (max-width: 768px) {
+  .footer-top, .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .subscribe-box input { width: 100%; }
+}
