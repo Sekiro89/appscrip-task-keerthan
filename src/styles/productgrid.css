@@ -66,3 +66,66 @@
   .product-grid { grid-template-columns: 1fr; gap: 14px; }
   .container { flex-direction: column; padding: 12px; }
 }
+/* === Filter & Sort Header === */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* Desktop version (default) */
+.desktop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Mobile version hidden by default */
+.mobile-filter-sort {
+  display: none;
+}
+
+/* ===== Responsive behavior ===== */
+
+/* On screens <= 768px → show only mobile filter/sort */
+@media (max-width: 768px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-filter-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+    gap: 10px;
+  }
+
+  .filter-btn {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .sort-select {
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 13px;
+  }
+}
+
+/* On larger screens → keep desktop layout only */
+@media (min-width: 769px) {
+  .mobile-filter-sort {
+    display: none;
+  }
+}
+
